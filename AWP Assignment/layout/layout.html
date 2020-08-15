@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Document</title>
+    <script src="layout.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--Menubar-->
+        <div class="row bg-dark justify-content-center align-items-center" style="height:10vh;">
+            <div class="col-6 cl-md-3 text-light" style="font-size: 22px;">Home</div>
+            <div class="col-6 cl-md-3 text-light d-flex justify-content-end" style="font-size: 22px;">Log Out</div>
+        </div>
+        <!--Row 1-->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-10 cl-md-5 p-0 bg-light justify-content-center align-items-center" style="height: 25vh; 
+            border:1px solid black;
+            border-top: none;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
+            font-family: cursive;
+            font-weight:700;
+            ">
+                The learning process continues until the day you die.
+            </div>
+        </div>
+        <!--Row 2-->
+        <div class="row justify-content-center" style="height: 5vh;">
+            <div class="col-2 cl-md-1 p-0 rounded"><button class="btn btn-outline-secondary btn-block" id="inputid1"
+                    onclick="likehere()">Like</button>
+            </div>
+            <div class="col-5 cl-md-3 p-0 rounded"><input type="text" placeholder="Type here" name="" <button
+                    class="form-control" id="inputid2"></button>
+            </div>
+            <div class="col-3 p-0 rounded"><button class="btn btn-outline-secondary btn-block" id="inputid3"
+                    onclick="commenthere()">comment</button>
+            </div>
+        </div>
+        <!--Row 3-->
+        <div class="d-flex flex-column" id="mainbox">
+
+            <div class="row justify-content-center" id="commentContainer"
+                style="height: 5vh; margin-top: 15px;visibility: hidden;">
+                <div class="col-7 cl-md-3 p-0" id="commentbox" style="font-size:15px;">sample comment</div>
+                <div class="col-3 cl-md-1 p-0"><button class="btn btn-outline-danger btn-block" id="comment"
+                        onclick="deletehere(this)">Delete</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
